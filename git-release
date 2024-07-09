@@ -13,6 +13,9 @@ else
     REMOTE=origin
 fi
 
+echo "Pulling changes"
+git pull "$REMOTE"
+
 echo "Updating tags from remote $REMOTE"
 git fetch "$REMOTE" --tags --force
 
